@@ -1,0 +1,8 @@
+# If this were a real material, what structure would you expect it to be? 
+
+This would make a cubic crystal lattice structure. In a real material, I would expect the number of valence electrons to dictate which atoms might fit into the lattice and be "locked" into place periodically.
+
+# How would you need to modify your code if the pressure was non-zero? 
+
+Since Pressure = Force/Area, and Force = a/mass_of_atom, I would isolate for acceleration
+(a = Pressure*Area*mass_of_atom), and move the atom based on the pressure, the area and the mass of the atom. I would need to iterate over the atom positions as they change based on the acceleration. 
